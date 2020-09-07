@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "RegisterQuestion";
+}
+<
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+</head>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url("../img1.jpg");
+    }
+
+    .bg-text {
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        border: 10px solid #f1f1f1;
+        position: fixed; /* Stay fixed */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 600px;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="bg-text">
+        <p>Chooose your action: </p>
+        </br>
+        <table>
+            <tr>
+                <td>
+                    <a href="@Url.Action("Create","Trips")">
+                        <img src="@Url.Content("~/patnik.jpg")" width="250px" />
+                </td>
+                <td>
+                    <a href="@Url.Action("Index","Trips")">
+                        <img src="@Url.Content("~/prevoznik.jpg")" width="250px" />
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
